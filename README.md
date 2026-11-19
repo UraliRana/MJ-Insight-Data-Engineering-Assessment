@@ -23,7 +23,6 @@ full_load_manifest                cdc_batch_manifest
     v
 Compare target with independently built source_current_state
 
-Production adaptation: SQL Server transaction-log CDC → immutable change batches in ADLS → Databricks deduplication and Delta MERGE. Use a consistent snapshot or CDC boundary to prevent gaps between the initial extraction and the incremental stream. The notebook's simulated feed is not SQL Server CDC.
 Prerequisites
 - Azure Databricks workspace with a Python notebook and Delta Lake support; Serverless can be used.
 - Permission to create a schema and managed Delta tables in a Unity Catalog catalog.
